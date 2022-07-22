@@ -1,0 +1,588 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #faedcd;
+}
+
+.headerPadre{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-areas: 
+	"header header header"
+	"titulo1 titulo1 titulo1"
+	"parra-index parra-index parra-index"
+	"imagen-pres imagen-pres imagen-pres"
+	"sectionA sectionA sectionA"
+	"publicidad publicidad publicidad"
+	"sectionB sectionB sectionB"
+	"footer footer footer"
+	;
+}
+
+header {
+	grid-area: header;
+	position: sticky;
+	top: 0;
+	background-color: #995751;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 100px;
+	z-index: 2;
+	border-radius: 0px 0px 30px 30px;
+}
+
+.publicidad{
+	border-radius: 30px;
+	grid-area: publicidad;
+	text-align: center;
+	width: 100%;
+	height: 28vh;
+	background-color: #ff006e;
+	margin-top: 80px;
+	padding: 120px 0 0 0;
+	font-size: 50px;
+}
+
+.imagen{
+	width: 70px;
+	height: 70px;
+	margin-left: 20px;
+	transition: all .4s;
+	border-radius: 100px;
+	margin: 10px 30px;
+}
+
+.imagen:hover{
+	box-shadow: 1px 1px 7px 7px white;
+}
+
+.menunav ul{
+	margin: 5px 10px;
+	display: flex;
+	justify-content: center;
+
+}
+
+.menunav ul li{
+	list-style: none;
+}
+
+ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 0 10px;
+	font-size: 23px;
+	margin: 10px;
+	transition: .4s;
+}
+
+ul li a:hover {
+	color:#222222;
+	background-color: white;
+	border-radius: 30px;
+	padding: 2px 20px;
+}
+
+.titulo1{
+	grid-area: titulo1;
+	text-align: center;
+	font-size: 80px;
+	margin: 30px 0 20px 0;
+	
+}
+
+.imagen-pres{
+	grid-area: imagen-pres;
+	text-align: center;
+	padding-top: 20px;
+	width: 100%;
+}
+
+.pre-img{
+
+	text-align: center;
+	align-items: center;
+	border: solid #e65946 4px;
+	transition-delay: .1s;
+	transition-duration: .4s;
+	margin: 7px;
+	width: 35%;
+	height: 43vh;
+}
+
+.pre-img:hover{
+	box-shadow: 1px 1px 20px 10px #666;
+}
+
+.sectionA{
+	grid-area: sectionA;
+}
+
+.titulo{
+	grid-area: titulo;
+    font-size: 50px;
+    display:block;
+    text-align: center;
+    padding: 40px 0 15px 0;
+
+}
+
+.parra-index{
+	padding:0 50px 20px 50px;
+	font-size: 27px;
+	text-align: center;
+}
+
+.sectionB{
+	grid-area: sectionB;
+	padding-top: 20px;
+	
+}
+
+.promos{
+    width: 180px;
+	height: 180px;
+	padding:10px 10px;
+}
+
+.promociones{
+	display: flex;
+	font-size: 30px;
+	flex-direction: column;
+    text-align: center;
+	align-items: center;
+	border: 3px solid #e65946;
+	margin: 10px;
+	border-radius: 20px;
+}
+
+footer{
+	display: grid;
+	grid-area: 	footer;
+	grid-template-columns: repeat(2,1fr);
+	background-color: #995751;
+	height: 220px;
+}
+
+.red-footer{
+	padding: 20px 0 3px 20px;
+}
+
+.img-pie{
+	display: flex;
+	flex-direction: column;
+	width: 40px;
+	margin-right: 10px;
+	align-items: center;
+	text-align: center;
+	
+}
+
+
+.redes{
+	display: flex;
+	margin: 1px 0px 5px 20px;
+	align-items: center;
+	text-decoration: none;
+	color: white;
+	transition: .2s;
+}
+
+.redes:hover{
+	color: #000;
+}
+
+.btn-footer{
+	border: 3px solid black;
+	border-radius: 10px;
+	font-size: 45px;
+	padding: 20px 40px;
+	margin:70px 0 0px 100px;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.btn-footer:hover{
+	background-color: whitesmoke;
+	border-radius: 20px;
+	box-shadow: 1px 1px 8px 8px white;
+}
+
+.imgwhats{
+	width: 80px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+}
+
+/*Pagina PRODUCTOS*/
+
+.productPadre{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-areas: 
+	"header header header"
+	"titulo1 titulo1 titulo1"
+	"centroP centroP centroP"
+	"publicidad publicidad publicidad"
+	"sectionB sectionB sectionB"
+	"footer footer footer"
+	;
+}
+
+.centroProducts{
+	grid-area: centroP;
+	margin: 0px 0px;
+}
+
+.productosImg{
+	width: 20%;
+	height: 30vh;
+	margin-left: 140px;
+}
+
+.product{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 20px;
+	font-size: 28px;
+}
+
+.btn-contServ{
+	padding: 10px 25px;
+	font-size: 20px;
+	border: 3px black solid;
+	border-radius: 10px;
+	transition: .2s;
+}
+
+.btn-contServ:hover{
+	background-color: #a9dadc;
+}
+
+/*Pagina SERVICIOS*/
+
+.ServicePadre{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-areas: 
+	"header header header"
+	"titulo1 titulo1 titulo1"
+	"centroS centroS centroS"
+	"publicidad publicidad publicidad"
+	"sectionB sectionB sectionB"
+	"footer footer footer"
+	;
+}
+
+.servicImg{
+	padding-top: 10px;
+	width: 20%;	
+	height: 30vh;
+}
+
+.service{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 40px;
+	font-size: 23px;
+}
+
+.centroService{
+	grid-area: centroS;
+	padding-bottom: 20px;
+}
+
+.subtitulo{
+	font-size: 20px;
+	text-align: center;
+	margin: 0px 30px 50px 30px;
+}
+
+/*Pagina SOBRE NOSOTROS*/
+
+.SobreNosPadre{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-areas: 
+	"header header header"
+	"titulo1 titulo1 titulo1"
+	"centroSN centroSN centroSN"
+	"sectionB sectionB sectionB"
+	"footer footer footer"
+	;
+}
+
+.sobreNosCentro{
+	grid-area: centroSN;
+}
+
+.ubiTrabajo{
+	font-size: 45px;
+	padding-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.ubicacion{
+	padding: 80px 0 10px 0;
+}
+
+.mapa{
+	width: 70%;
+	height: 60vh;
+}
+
+.trabajamos{
+	padding: 80px 0 10px 0;
+}
+
+.videoPresentacion{
+	width: 70%;
+	height: 60vh;
+}
+
+/*pagina CONTACTO*/
+
+.contactoPadre {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-areas: 
+	"header header header"
+	"centroContacto centroContacto centroContacto"
+	"footer footer footer"
+	;
+}
+
+.centroContacto{
+	grid-area: centroContacto;
+}
+
+fieldset{
+	width: 500px;
+	margin: 10px 10px 0 10px;
+}
+
+.conFieldset{
+	display: flex;
+	width: 500px;
+	height: o;
+	margin:auto;
+}
+
+legend{
+	text-align: center;
+	font-size: 15px;
+	margin-bottom: 25px;
+}
+.formularioContacto{
+	width: 100%;
+	text-align: center;
+}
+
+.btnContact{
+	margin:20px 5px 20px 5px ;
+	font-size: 15px;
+	color: #000000;
+	padding: 7px 25px;
+	border: #000 solid 2px;
+	border-radius: 5px;
+	background-color: #e68959;
+	transition: .4s;
+}
+
+.btnContact:hover{
+	background-color: #f68989;
+	border-radius: 15px;
+}
+
+.publicidadC{
+	grid-area: publicidad;
+	text-align: center;
+	border-radius: 20px;
+	width: 100%;
+	height: 28vh;
+	background-color: #ff006e;
+	margin: 20px 0 10px 0; 
+	padding: 120px 0 0 0;
+	font-size: 50px;
+}
+
+/*-------------------------------------------------MEDIA-------------------------------------------------*/
+/*media del INICIO*/
+
+@media(max-width: 768px){
+	.headerPadre {
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+		grid-template-areas: 
+		"header header"
+		"titulo1 titulo1"
+		"imagen-pres imagen-pres"
+		"sectionA sectionA"
+		"publicidad publicidad"
+		"sectionB sectionB"
+		"footer footer"
+		;
+	}
+
+	header{
+		flex-direction: column;
+		width: 100%;
+		height: 200px;
+		position: relative;
+	}
+	.menunav ul{
+		flex-direction: column;
+	}
+	ul li a{
+		font-size: 16px;
+	}
+	.titulo1{
+		font-size: 55px;
+	}
+	.pre-img{
+		width: 65%;
+		height: 40vh;
+	}
+	.imgwhats{
+		width: 50px;
+		position: fixed;
+		bottom: 5px;
+		right: 5px;
+	}
+	.promociones{
+		font-size: 19px;
+	}	
+	.parra-index{
+		font-size: 15px;
+	}
+	footer{
+		display: flex;
+		text-align: center;
+		align-items: center;
+		flex-direction: column;
+		height: 350px;
+	}
+	.redes{
+		margin: 10px 0px;
+	}
+
+	.btn-footer{
+		padding: 10px 20px;
+		margin: 20px 0px;
+		font-size: 40px;
+	}
+}
+
+
+/*media de La Pagina de PRODUCTOS*/
+
+@media(max-width:768px){
+.productPadre{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-template-areas: 
+		"header header"
+		"titulo1 titulo1"
+		"centroP centroP"
+		"publicidad publicidad"
+		"sectionB sectionB"
+		"footer footer"
+	;
+	}
+
+	.product{
+		justify-content: space-around;
+		font-size: 23px;
+	}
+
+	.productosImg{
+		height: 20vh;
+		margin: 10px 10px 10px 10px;
+	}
+	.product{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 19px;
+	}
+	.btn-contServ{
+		padding: 10px 20px;
+		font-size: 15px;
+		border: 3px black solid;
+		border-radius: 10px;
+	}
+	
+}
+
+/*Media de la pagina de SERVICIOS*/
+
+@media(max-width:768px){
+.ServicePadre{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-template-areas: 
+		"header header"
+		"titulo1 titulo1"
+		"centroS centroS"
+		"publicidad publicidad"
+		"sectionB sectionB"
+		"footer footer"
+		;
+	}
+	.servicImg{
+		margin-top: 10px;
+		width: 30% ;
+		height: 20vh;
+	}
+}
+
+/*media de la pagina De SOBRE NOSOTROS*/
+
+@media(max-width:768px){
+	.SobreNosPadre{
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+		grid-template-areas: 
+		"header header"
+		"titulo1 titulo1"
+		"centroSN centroSN"
+		"sectionB sectionB"
+		"footer footer"
+		;
+	}
+	.mapa{
+		width: 80%;
+		height: 45vh;
+	}
+	.videoPresentacion{
+		width: 85%;
+		height: 40vh;
+	}
+}
+/*media de la pagina De CONTACTO*/
+
+@media(max-width:768px){
+	.contactoPadre {
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+		grid-template-areas: 
+		"header header"
+		"centroContacto centroContacto"
+		"footer footer"
+	}
+	.conFieldset{
+		display: flex;
+		width: 340px;
+	}
+}
+
