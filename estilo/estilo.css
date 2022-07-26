@@ -24,68 +24,46 @@ body{
 
 header {
 	grid-area: header;
-	position: sticky;
-	top: 0;
-	background-color: #995751;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
-	height: 100px;
-	z-index: 2;
-	border-radius: 0px 0px 30px 30px;
 }
+
+.letraNav{
+	margin: 0 10px;
+	transition: .4s;
+	font-size: 20px;
+}
+
+.letraNav:hover{
+	color: #000;
+	background-color: #ffffff;
+	border-radius: 40px;
+	padding: 5px 20px;
+}
+
+
 
 .publicidad{
 	border-radius: 30px;
 	grid-area: publicidad;
 	text-align: center;
 	width: 100%;
-	height: 28vh;
+	height: 30vh;
 	background-color: #ff006e;
-	margin-top: 80px;
-	padding: 120px 0 0 0;
-	font-size: 50px;
+	margin-top: 100px;
+	padding: 200px 0;
+	font-size: 40px;
 }
 
 .imagen{
-	width: 70px;
-	height: 70px;
+	width: 60px;
+	height: 60px;
 	margin-left: 20px;
 	transition: all .4s;
 	border-radius: 100px;
-	margin: 10px 30px;
+	margin: 10px 0 10px 30px;
 }
 
 .imagen:hover{
 	box-shadow: 1px 1px 7px 7px white;
-}
-
-.menunav ul{
-	margin: 5px 10px;
-	display: flex;
-	justify-content: center;
-
-}
-
-.menunav ul li{
-	list-style: none;
-}
-
-ul li a{
-	text-decoration: none;
-	color: white;
-	padding: 0 10px;
-	font-size: 23px;
-	margin: 10px;
-	transition: .4s;
-}
-
-ul li a:hover {
-	color:#222222;
-	background-color: white;
-	border-radius: 30px;
-	padding: 2px 20px;
 }
 
 .titulo1{
@@ -241,16 +219,14 @@ footer{
 }
 
 .productosImg{
-	width: 20%;
-	height: 30vh;
-	margin-left: 140px;
+	width: 35%;
+	height: 20vh;
 }
 
 .product{
-	display: flex;
-	justify-content: space-between;
+	text-align: center;
 	align-items: center;
-	padding-top: 20px;
+	margin: 40px 0px 40px 0px;
 	font-size: 28px;
 }
 
@@ -283,8 +259,8 @@ footer{
 
 .servicImg{
 	padding-top: 10px;
-	width: 20%;	
-	height: 30vh;
+	width: 35%;	
+	height: 20vh;
 }
 
 .service{
@@ -303,7 +279,7 @@ footer{
 .subtitulo{
 	font-size: 20px;
 	text-align: center;
-	margin: 0px 30px 50px 30px;
+	margin: 0px 30px 100px 30px;
 }
 
 /*Pagina SOBRE NOSOTROS*/
@@ -470,7 +446,7 @@ legend{
 		text-align: center;
 		align-items: center;
 		flex-direction: column;
-		height: 350px;
+		height: 400px;
 	}
 	.redes{
 		margin: 10px 0px;
@@ -501,7 +477,6 @@ legend{
 	}
 
 	.product{
-		justify-content: space-around;
 		font-size: 23px;
 	}
 
@@ -516,8 +491,8 @@ legend{
 		font-size: 19px;
 	}
 	.btn-contServ{
-		padding: 10px 20px;
-		font-size: 15px;
+		padding: 5px 6px;
+		font-size: 10px;
 		border: 3px black solid;
 		border-radius: 10px;
 	}
